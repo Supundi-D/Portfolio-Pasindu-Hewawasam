@@ -5,84 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Me | Pasindu Hewawasam</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      background-color: #f0faff;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 700px;
-      margin: 80px auto;
-      background: #fff;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    h1 {
-      color: skyblue;
-      margin-bottom: 30px;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    input, textarea {
-      padding: 12px;
-      margin: 10px 0;
-      width: 100%;
-      max-width: 500px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 1rem;
-    }
-    button {
-      background-color: skyblue;
-      color: white;
-      border: none;
-      padding: 12px;
-      font-size: 1rem;
-      border-radius: 6px;
-      cursor: pointer;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-    button:hover {
-      background-color: #4da6ff;
-    }
-    .back-link {
-      display: block;
-      margin-top: 20px;
-      color: skyblue;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .back-link:hover {
-      text-decoration: underline;
-    }
-    .contact-info {
-      margin-top: 30px;
-      font-size: 1rem;
-      color: #555;
-    }
-    .social-icons {
-      margin-top: 20px;
-    }
-    .social-icons a {
-      display: inline-block;
-      margin: 0 10px;
-    }
-    .social-icons img {
-      width: 32px;
-      height: 32px;
-    }
-  </style>
 </head>
 <body>
-    <script src="script.js"></script>
+  <div id="progress-bar"></div>
 
   <!-- Navbar -->
   <nav>
@@ -103,18 +28,16 @@
       <button type="submit">Send Message</button>
     </form>
 
-    <!-- Info -->
     <div class="contact-info">
       <p><strong>Phone:</strong> +94 726839060</p>
       <p><strong>Email:</strong> pasindu.maduranga08@gmail.com</p>
     </div>
 
-    <!-- Social Media -->
     <div class="social-icons">
-      <a href="https://www.linkedin.com/in/pasindu-madhuranga-a02860213" target="_blank">
+      <a href="https://www.linkedin.com/in/pasindu-madhuranga-a02860213" target="_blank" title="LinkedIn">
         <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
       </a>
-      <a href="https://orcid.org/0009-0002-5157-3012" target="_blank">
+      <a href="https://orcid.org/0009-0002-5157-3012" target="_blank" title="ORCID">
         <img src="https://cdn-icons-png.flaticon.com/512/906/906343.png" alt="ORCID">
       </a>
     </div>
@@ -125,5 +48,7 @@
   <footer>
     <p>&copy; 2025 Pasindu Hewawasam | All Rights Reserved</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

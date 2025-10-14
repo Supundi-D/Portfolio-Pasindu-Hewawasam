@@ -445,6 +445,47 @@
     font-style: italic;
     font-size: 0.95rem;
   }
+
+  #education {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  #education h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  #education .card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 1.5rem 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  #education .card h2 {
+    color: #004aad;
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+  }
+  
+  #education .card p {
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  #education .card ul {
+    margin-left: 1.2rem;
+    color: #444;
+    line-height: 1.6;
+    list-style-type: disc;
+  }
+  
   
   
   

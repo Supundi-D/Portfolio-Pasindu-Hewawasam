@@ -351,6 +351,50 @@
   .back-link:hover {
     color: #2980b9;
   }
+
+  #experience {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  #experience h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card h2 {
+    font-size: 1.3rem;
+    color: #004aad;
+  }
+  
+  .card p {
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  .card ul {
+    margin-left: 1.2rem;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  .card ul ul {
+    margin-left: 1.5rem;
+    list-style-type: circle;
+  }
+  
   
   /* Media Queries for Mobile Responsiveness */
   @media screen and (max-width: 768px) {

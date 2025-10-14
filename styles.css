@@ -394,6 +394,58 @@
     margin-left: 1.5rem;
     list-style-type: circle;
   }
+
+  #projects {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  #projects h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  #projects .subsection {
+    margin-bottom: 2.5rem;
+  }
+  
+  #projects .subsection h2 {
+    color: #004aad;
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+    border-left: 4px solid #004aad;
+    padding-left: 0.8rem;
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 1.5rem 2rem;
+    margin-bottom: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  }
+  
+  .card h3 {
+    font-size: 1.1rem;
+    color: #222;
+    margin-bottom: 0.3rem;
+  }
+  
+  .card p {
+    color: #555;
+    font-style: italic;
+    font-size: 0.95rem;
+  }
+  
   
   
   /* Media Queries for Mobile Responsiveness */

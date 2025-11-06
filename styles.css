@@ -1,5 +1,7 @@
-/* General Reset */
-* {
+/* =========================================================
+   🌐 GLOBAL RESET & BASE STYLES
+   ========================================================= */
+   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,7 +9,7 @@
   
   html, body {
     height: 100%;
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
     background: #f8fcff;
     color: #333;
     display: flex;
@@ -16,30 +18,36 @@
     font-size: 16px;
   }
   
-  /* Navbar */
+  /* =========================================================
+     🧭 NAVIGATION BAR
+     ========================================================= */
   nav {
-    background: skyblue;
-    text-align: center;
-    padding: 12px 0;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1.5rem;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 100;
   }
   
   nav a {
-    color: white;
-    margin: 0 15px;
     text-decoration: none;
+    color: #333;
     font-weight: 500;
-    font-size: 1rem;
-    transition: 0.3s;
+    transition: color 0.3s;
   }
   
-  nav a:hover, nav a.active {
-    text-decoration: underline;
+  nav a:hover,
+  nav a.active {
+    color: #0078ff;
   }
   
-  /* Hero (Home) */
+  /* =========================================================
+     🏠 HERO SECTION (HOME)
+     ========================================================= */
   .hero {
     text-align: center;
     padding: 80px 20px;
@@ -67,6 +75,9 @@
     color: skyblue;
   }
   
+  /* =========================================================
+     🔘 BUTTONS
+     ========================================================= */
   .btn {
     display: inline-block;
     margin-top: 20px;
@@ -80,20 +91,22 @@
     transition: all 0.3s ease;
     cursor: pointer;
     border: none;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
   .btn:hover {
     background: #2980b9;
     transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   }
   
   .btn:active {
     transform: translateY(0);
   }
   
-  /* Page Content */
+  /* =========================================================
+     📄 PAGE CONTENT
+     ========================================================= */
   .content {
     max-width: 900px;
     margin: 60px auto;
@@ -109,127 +122,33 @@
     font-weight: 600;
   }
   
-/* Base state for cards */
-.card {
+  /* =========================================================
+     🃏 CARD ANIMATIONS
+     ========================================================= */
+  .card {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease, transform 0.6s ease;
   }
   
-  /* When card fades in */
   .card.fade-in {
     opacity: 1;
     transform: translateY(0);
   }
   
-  /* When card fades out */
   .card.fade-out {
     opacity: 0;
     transform: translateY(20px);
   }
   
-  /* Contact Form */
-  form input, form textarea {
-    width: 100%;
-    max-width: 500px;
-    padding: 10px;
-    margin: 8px auto;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 0.95rem;
-    display: block;
-  }
-  
-  form textarea {
-    resize: vertical;
-  }
-  
-  form button {
-    background: skyblue;
-    color: white;
-    border: none;
-    padding: 10px 18px;
-    border-radius: 6px;
-    font-size: 0.95rem;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-  
-  form button:hover {
-    background: #4da6ff;
-  }
-  
-  .contact-info {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 0.95rem;
-    color: #555;
-  }
-  
-  .social-icons {
-    margin-top: 30px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .social-icons img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease;
-  }
-  
-  .social-icons a:hover img {
-    transform: scale(1.1);
-  }
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 12px;
-    background: skyblue;
-    color: white;
-    font-size: 0.9rem;
-    margin-top: auto;
-    width: 100%;
-  }
-  
-
-  #progress-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 4px;
-    background: #4da6ff;
-    width: 0;
-    z-index: 2000;
-  }
-  
-  #back-to-top {
-    position: fixed;
-    bottom: 70px;
-    right: 20px;
-    padding: 10px 15px;
-    background: skyblue;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    display: none;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
-  }
-  #back-to-top:hover {
-    background: #4da6ff;
-  }
-
-  /* Contact Form Styling */
+  /* =========================================================
+     ✉️ CONTACT FORM
+     ========================================================= */
   .container {
     max-width: 700px;
     margin: 60px auto;
     padding: 40px;
-    background: white;
+    background: #fff;
     border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
     width: 90%;
@@ -250,7 +169,8 @@
     margin-bottom: 40px;
   }
   
-  form input, form textarea {
+  form input,
+  form textarea {
     width: 100%;
     padding: 15px;
     border: 2px solid #eef2f7;
@@ -260,7 +180,8 @@
     background: #f8fafc;
   }
   
-  form input:focus, form textarea:focus {
+  form input:focus,
+  form textarea:focus {
     outline: none;
     border-color: #3498db;
     background: white;
@@ -286,12 +207,16 @@
     box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
   }
   
+  /* =========================================================
+     📞 CONTACT INFO
+     ========================================================= */
   .contact-info {
     background: #f8fafc;
     padding: 30px;
     border-radius: 8px;
     margin: 40px 0;
     border: 2px solid #eef2f7;
+    text-align: center;
   }
   
   .contact-info p {
@@ -308,6 +233,9 @@
     color: #3498db;
   }
   
+  /* =========================================================
+     🌐 SOCIAL ICONS
+     ========================================================= */
   .social-icons {
     display: flex;
     justify-content: center;
@@ -337,6 +265,9 @@
     border-color: #3498db;
   }
   
+  /* =========================================================
+     ↩️ BACK LINK
+     ========================================================= */
   .back-link {
     display: block;
     text-align: center;
@@ -350,64 +281,50 @@
   
   .back-link:hover {
     color: #2980b9;
+    text-decoration: underline;
   }
-
-  #experience {
+  
+  /* =========================================================
+     🧾 EXPERIENCE / PROJECTS / EDUCATION SECTIONS
+     ========================================================= */
+  #experience,
+  #projects,
+  #education {
     max-width: 900px;
     margin: 0 auto;
     padding: 2rem;
   }
   
-  #experience h1 {
+  #experience h1,
+  #projects h1,
+  #education h1 {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2rem;
     color: #333;
   }
   
-  .card {
+  /* ----- Experience Cards ----- */
+  #experience .card {
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 1.5rem 2rem;
     margin-bottom: 2rem;
   }
   
-  .card h2 {
+  #experience .card h2 {
     font-size: 1.3rem;
     color: #004aad;
   }
   
-  .card p {
+  #experience .card p {
     color: #555;
     font-weight: 500;
     margin-bottom: 1rem;
   }
   
-  .card ul {
-    margin-left: 1.2rem;
-    color: #444;
-    line-height: 1.6;
-  }
-  
-  .card ul ul {
-    margin-left: 1.5rem;
-    list-style-type: circle;
-  }
-
-  #projects {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
-  
-  #projects h1 {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    color: #333;
-  }
-  
+  /* ----- Projects Section ----- */
   #projects .subsection {
     margin-bottom: 2.5rem;
   }
@@ -420,49 +337,37 @@
     padding-left: 0.8rem;
   }
   
-  .card {
+  #projects .card {
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 1.5rem 2rem;
     margin-bottom: 1rem;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
   
-  .card:hover {
+  #projects .card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
   }
   
-  .card h3 {
+  #projects .card h3 {
     font-size: 1.1rem;
     color: #222;
     margin-bottom: 0.3rem;
   }
   
-  .card p {
+  #projects .card p {
     color: #555;
     font-style: italic;
     font-size: 0.95rem;
   }
-
-  #education {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem;
-  }
   
-  #education h1 {
-    text-align: center;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-    color: #333;
-  }
-  
+  /* ----- Education Section ----- */
   #education .card {
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 1.5rem 2rem;
     margin-bottom: 1.5rem;
   }
@@ -486,130 +391,41 @@
     list-style-type: disc;
   }
   
-  body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f8f9fc;
-    color: #333;
-  }
-
-  nav {
-    background: #fff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    gap: 1.5rem;
-    position: sticky;
+  /* =========================================================
+     📊 PROGRESS BAR & BACK TO TOP BUTTON
+     ========================================================= */
+  #progress-bar {
+    position: fixed;
     top: 0;
-    z-index: 100;
+    left: 0;
+    height: 4px;
+    background: #4da6ff;
+    width: 0;
+    z-index: 2000;
   }
-
-  nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: color 0.3s;
-  }
-
-  nav a:hover {
-    color: #0078ff;
-  }
-
-  .container {
-    max-width: 700px;
-    margin: 4rem auto;
-    background: #fff;
-    border-radius: 10px;
-    padding: 2.5rem;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-  }
-
-  h1 {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    font-size: 2rem;
-    color: #222;
-  }
-
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  input, textarea {
-    padding: 0.9rem 1rem;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
-    width: 100%;
-    transition: all 0.3s;
-  }
-
-  input:focus, textarea:focus {
-    border-color: #0078ff;
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(0,120,255,0.1);
-  }
-
-  button {
-    background: #0078ff;
-    color: #fff;
+  
+  #back-to-top {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    padding: 10px 15px;
+    background: skyblue;
+    color: white;
     border: none;
-    padding: 0.9rem;
     border-radius: 6px;
-    font-size: 1rem;
     cursor: pointer;
-    transition: background 0.3s;
+    font-size: 0.9rem;
+    display: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   }
-
-  button:hover {
-    background: #005fcc;
+  
+  #back-to-top:hover {
+    background: #4da6ff;
   }
-
-  .contact-info {
-    margin-top: 2rem;
-    font-size: 0.95rem;
-    text-align: center;
-    color: #555;
-  }
-
-  .social-icons {
-    margin-top: 1.5rem;
-    text-align: center;
-  }
-
-  .social-icons a {
-    margin: 0 10px;
-    display: inline-block;
-    transition: transform 0.3s;
-  }
-
-  .social-icons a:hover {
-    transform: scale(1.1);
-  }
-
-  .social-icons img {
-    width: 32px;
-    height: 32px;
-    border-radius: 6px;
-  }
-
-  .back-link {
-    display: block;
-    text-align: center;
-    margin-top: 2rem;
-    color: #0078ff;
-    text-decoration: none;
-    font-weight: 500;
-  }
-
-  .back-link:hover {
-    text-decoration: underline;
-  }
-
+  
+  /* =========================================================
+     ⚓ FOOTER
+     ========================================================= */
   footer {
     text-align: center;
     padding: 1.5rem 0;
@@ -618,10 +434,12 @@
     font-size: 0.9rem;
     color: #777;
     margin-top: 4rem;
+    width: 100%;
   }
   
-  
-  /* Media Queries for Mobile Responsiveness */
+  /* =========================================================
+     📱 RESPONSIVE DESIGN
+     ========================================================= */
   @media screen and (max-width: 768px) {
     .container {
       margin: 20px auto;
@@ -637,7 +455,8 @@
       gap: 15px;
     }
   
-    form input, form textarea {
+    form input,
+    form textarea {
       padding: 12px;
     }
   
@@ -657,3 +476,4 @@
       padding: 10px;
     }
   }
+  

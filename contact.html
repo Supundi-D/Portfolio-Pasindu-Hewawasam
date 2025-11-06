@@ -9,9 +9,8 @@
   <!-- External CSS -->
   <link rel="stylesheet" href="styles.css" />
 
-  <!-- Google Fonts Example -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  
 </head>
 <body>
   <!-- Navbar -->
@@ -53,7 +52,8 @@
       </a>
     </div>
 
-    <a href="index.html" class="back-link">← Back to Home</a>
+    <!-- Smart Back Link -->
+    <a id="back-link" class="back-link" href="#">← Back</a>
   </main>
 
   <!-- Footer -->
@@ -61,6 +61,19 @@
     <p>&copy; 2025 Pasindu Hewawasam — All Rights Reserved</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    // Smart Back Button Logic
+    const backLink = document.getElementById("back-link");
+
+    if (document.referrer && document.referrer !== window.location.href) {
+      // User came from another page
+      backLink.textContent = "← Go Back";
+      backLink.href = "javascript:history.back()";
+    } else {
+      // User opened this page directly (no referrer)
+      backLink.textContent = "← Back to Home";
+      backLink.href = "index.html";
+    }
+  </script>
 </body>
 </html>
